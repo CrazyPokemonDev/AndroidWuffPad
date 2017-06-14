@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">WuffPad</string>
-    <string name="Hello">Hello World!</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="new_file">New File</string>
+    <string name="open_file">Open File</string>
+    <string name="save_file">Save File</string>
+    <string name="exit_confirmation">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

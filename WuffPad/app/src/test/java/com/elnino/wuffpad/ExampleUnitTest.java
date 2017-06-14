@@ -1,4 +1,4 @@
-package com.chaosdev.xml.wuffpad;
+package com.elnino.wuffpad;
 
 import org.junit.Test;
 

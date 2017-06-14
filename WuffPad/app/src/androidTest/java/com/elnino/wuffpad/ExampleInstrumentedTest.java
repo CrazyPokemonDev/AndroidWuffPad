@@ -1,4 +1,4 @@
-package com.chaosdev.xml.wuffpad;
+package com.elnino.wuffpad;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.chaosdev.xml.wuffpad", appContext.getPackageName());
+        assertEquals("com.elnino.wuffpad", appContext.getPackageName());
     }
 }

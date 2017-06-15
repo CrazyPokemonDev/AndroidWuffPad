@@ -17,4 +17,9 @@
         android:orderInCategory="100"
         android:title="@string/save_file"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/check_xml"
+        android:orderInCategory="100"
+        android:title="@string/check_xml"
+        app:showAsAction="never" />
 </menu>

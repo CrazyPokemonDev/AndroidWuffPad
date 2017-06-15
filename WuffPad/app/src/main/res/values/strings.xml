@@ -4,6 +4,7 @@
     <string name="new_file">New File</string>
     <string name="open_file">Open File</string>
     <string name="save_file">Save File</string>
+    <string name="check_xml">Check XML</string>
     <string name="exit_confirmation">Are you sure you want to exit?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>

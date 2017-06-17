@@ -7,28 +7,18 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import org.xml.sax.SAXException;
-
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-
-import mf.javax.xml.transform.Source;
-import mf.javax.xml.transform.stream.StreamSource;
-import mf.javax.xml.validation.Schema;
-import mf.javax.xml.validation.SchemaFactory;
-import mf.javax.xml.validation.Validator;
-import mf.org.apache.xerces.jaxp.validation.XMLSchemaFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -126,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                     inputStream));
             String line;
             while ((line = reader.readLine()) != null) {
-                stringBuilder.append(line + "\n");
+                stringBuilder.append(line).append("\n");
             }
             inputStream.close();
         }
@@ -161,18 +151,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkXML() {
-        try {
-            SchemaFactory factory = new XMLSchemaFactory();
-            Source schemaFile = new StreamSource( getResources().openRawResource(R.raw.werewolf) );
-            Source xmlSource = new StreamSource( new ByteArrayInputStream(editor.getText().toString().getBytes(StandardCharsets.UTF_8)) );
-            Schema schema = factory.newSchema(schemaFile);
-            Validator validator = schema.newValidator();
-            validator.validate(xmlSource);
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // TODO
+        Snackbar.make(findViewById(R.id.editText), "Not yet implemented", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show();
     }
 
     @Override
